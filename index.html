@@ -13,12 +13,12 @@
     </header>
     <main>
 
-      <article class="elementVisibleMGB">
+      <article class="elementVisibleMGB" id="pregunta_1">
         <span class="titol negre">MP06 - UF03<br>Activitat avaluativa</span>
         <span class="subtitol vermell">8 de febrer de 2021</span>
         <div class="botons">
           <button class="boto inactiu" disabled onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu seguentMGB"   onclick="mostraAlerta();">Següent &gt;&gt;</button>
+          <button class="boto actiu seguentMGB"   onclick="passaSeguentMGB(this);">Següent &gt;&gt;</button>
         </div>
       </article>
 
@@ -45,7 +45,7 @@
         </div>
         <div class="botons">
           <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu seguentMGB" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+          <button class="boto actiu seguentMGB" onclick="passaSeguentMGB(this);">Següent&nbsp;&gt;&gt;</button>
         </div>
       </article>
 
@@ -83,13 +83,14 @@
         </div>
         <div class="botons">
           <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu seguentMGB" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+          <button class="boto actiu seguentMGB" onclick="passaSeguentMGB(this);">Següent&nbsp;&gt;&gt;</button>
         </div>
       </article>
     </main>
       
-    <script src="./examen.js"></script>
-    <script src="./matrius.js"></script>
-    <script src="./operacions.js"></script>
+    <script src="js/examen.js"></script>
+    <script src="js/matrius.js"></script>
+    <script src="js/operacions.js"></script>
+    <script src="js/seguentGomaMarc.js"></script>
   </body>
 </html>
